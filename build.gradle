@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+sourceSets {
+    main {
+        java {
+            compileClasspath += fileTree(dir: 'resources', includes: ['**/*.jar'])
+        }
+    }
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'jintel.Jintel'
+        attributes("Class-Path": '../../resources/miglayout-core-4.2.jar ../../resources/miglayout-javafx-4.2.jar')
+    }
+
+    from('resources') {
+        into 'resources'
+    }
+
+}
+

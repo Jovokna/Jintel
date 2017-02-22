@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: jintel.Jintel
+Class-Path: ../../resources/miglayout-core-4.2.jar ../../resources/mig
+ layout-javafx-4.2.jar
+
